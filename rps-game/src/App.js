@@ -21,13 +21,11 @@ function App() {
     }
   }, [state.result]);
 
-  console.log(state);
-  console.log(player1Score);
   return (
     <div className="h-screen bg-blue-900 text-white py-5 px-5 flex flex-col gap-5 justify-center items-center text-center">
       {state.selectedButtons.length === 0 && (
         <div>
-          <div className="flex gap-5 pb-5">
+          <div className="flex gap-5 pb-5 md:justify-around">
             <div className="border-white rounded-lg border-2 w-fit py-3 px-3">
               <h1 className="text-3xl">Player 1</h1>
               <h3 className="text-xl">score: {player1Score}</h3>
@@ -49,7 +47,7 @@ function App() {
       )}
       {state.selectedButtons.length === 1 && (
         <div>
-          <div className="flex gap-5 pb-5">
+          <div className="flex gap-5 pb-5 md:justify-around">
             <div className="border-white rounded-lg border-2 w-fit py-3 px-3">
               <h1 className="text-3xl">Player 1</h1>
               <h3 className="text-xl">score: {player1Score}</h3>
@@ -71,7 +69,7 @@ function App() {
       )}
       {state.selectedButtons.length === 2 && (
         <div>
-          <div className="flex gap-5 pb-5">
+          <div className="flex gap-5 pb-5 md:justify-around">
             <div className="border-white rounded-lg border-2 w-fit py-3 px-3">
               <h1 className="text-3xl">Player 1</h1>
               <h3 className="text-xl">score: {player1Score}</h3>
