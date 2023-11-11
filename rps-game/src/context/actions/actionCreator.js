@@ -7,15 +7,27 @@ export const chooseButtonAction = (payload) => {
   };
 };
 
-export const displayResultAction = (payload) => {
+export const displayResultAction = () => {
   return {
     type: appActions.displayResult,
-    payload,
   };
 };
 
 export const clearChoicesAction = () => {
   return {
     type: appActions.clearChoices,
+  };
+};
+
+export const clearResultAction = () => {
+  return {
+    type: appActions.clearResult,
+  };
+};
+
+export const countScoreAction = (payload) => {
+  return {
+    type: appActions.countScores,
+    payload,
   };
 };
